@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import hu.computertechnika.paginationfx.control.PaginationTableView?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="hu.computertechnika.paginationfx.QDSLJPADataProviderController">
+
+	<center>
+		<PaginationTableView fx:id="paginationTableView">
+			<tableView>
+				<columns>
+					<TableColumn fx:id="0" text="ID" />
+				</columns>
+				<columns>
+					<TableColumn fx:id="1" text="First name"
+						prefWidth="150" />
+				</columns>
+				<columns>
+					<TableColumn fx:id="2" text="Last name" prefWidth="150" />
+				</columns>
+				<columns>
+					<TableColumn fx:id="3" text="Age" />
+				</columns>
+				<columns>
+					<TableColumn fx:id="4" text="Gender" />
+				</columns>
+				<columns>
+					<TableColumn fx:id="5" text="Date of birth" />
+				</columns>
+			</tableView>
+		</PaginationTableView>
+	</center>
+
+</BorderPane>
+
