@@ -10,20 +10,23 @@
 
 	<name>PaginationFX</name>
 	<description>Paginable Tableview component for JavaFX</description>
+	<url>https://github.com/gbalanyi/PaginationFX</url>
 
 	<developers>
-	
+
 		<developer>
 			<id>gbalanyi</id>
 			<name>Gábor Balanyi</name>
 			<email>balanyi@computertechnika.hu</email>
 			<organization>Computer Technika Kft.</organization>
 		</developer>
-	
+
 	</developers>
-	
+
 	<scm>
-		<developerConnection>scm:svn:http://svn.ctmedika.hu/paginationfx/trunk/</developerConnection>
+		<connection>scm:git:git://github.com/gbalanyi/PaginationFX.git</connection>
+		<developerConnection>scm:git:ssh://github.com:gbalanyi/PaginationFX.git</developerConnection>
+		<url>https://github.com/gbalanyi/PaginationFX</url>
 	</scm>
 
 	<licenses>
@@ -163,9 +166,8 @@
 
 			<distributionManagement>
 				<snapshotRepository>
-					<id>debian</id>
-					<name>debian-snapshots</name>
-					<url>http://artifactory.ctmedika.hu/artifactory/libs-snapshot-local</url>
+					<id>ossrh</id>
+					<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 				</snapshotRepository>
 			</distributionManagement>
 
@@ -203,9 +205,8 @@
 
 			<distributionManagement>
 				<repository>
-					<id>debian</id>
-					<name>debian-releases</name>
-					<url>http://artifactory.ctmedika.hu/artifactory/libs-release-local</url>
+					<id>ossrh</id>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 				</repository>
 			</distributionManagement>
 
