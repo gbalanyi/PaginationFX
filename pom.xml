@@ -5,7 +5,7 @@
 
 	<groupId>hu.computertechnika</groupId>
 	<artifactId>paginationfx-parent</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>PaginationFX</name>
@@ -47,7 +47,7 @@
 		<slf4j.version>1.7.25</slf4j.version>
 		<log4j.version>1.2.17</log4j.version>
 		<h2.version>1.4.197</h2.version>
-		<mvn.jarplugin.version>3.0.1</mvn.jarplugin.version>
+		<mvn.jarplugin.version>3.1.0</mvn.jarplugin.version>
 		<mvn.sourceplugin.version>3.0.1</mvn.sourceplugin.version>
 		<mvn.javadocplugin.version>3.0.1</mvn.javadocplugin.version>
 		<mvn.gpgplugin.version>1.6</mvn.gpgplugin.version>
