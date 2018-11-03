@@ -237,7 +237,11 @@ public class PaginationTableView<UT> extends Control implements PaginationSuppor
 		if (newPageSize < this.getPageSize()) {
 
 			int firstVisibleIndex = this.getPageSize() * this.getCurrentPageIndex();
-			newPageIndex = firstVisibleIndex / newPageSize;
+			if (newPageSize > 0) {
+				newPageIndex = firstVisibleIndex / newPageSize;
+			} else {
+				newPageIndex = 0;
+			}
 
 		} else {
 
