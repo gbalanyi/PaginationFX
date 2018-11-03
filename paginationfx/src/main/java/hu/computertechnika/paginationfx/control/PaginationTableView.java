@@ -476,8 +476,8 @@ public class PaginationTableView<UT> extends Control implements PaginationSuppor
 
 	protected void initPaginationNavigator(PaginationNavigator paginationNavigator) {
 
-		Bindings.bindBidirectional(this.currentPageIndexProperty(), paginationNavigator.currentPageIndexProperty());
-		Bindings.bindBidirectional(this.pageNumberProperty(), paginationNavigator.pageNumberProperty());
+		Bindings.bindBidirectional(paginationNavigator.currentPageIndexProperty(), this.currentPageIndexProperty());
+		Bindings.bindBidirectional(paginationNavigator.pageNumberProperty(), this.pageNumberProperty());
 
 	}
 
