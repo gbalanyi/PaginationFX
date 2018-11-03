@@ -47,6 +47,7 @@
 		<slf4j.version>1.7.25</slf4j.version>
 		<log4j.version>1.2.17</log4j.version>
 		<h2.version>1.4.197</h2.version>
+		<mvn.jarplugin.version>3.0.1</mvn.jarplugin.version>
 		<mvn.sourceplugin.version>3.0.1</mvn.sourceplugin.version>
 		<mvn.javadocplugin.version>3.0.1</mvn.javadocplugin.version>
 		<mvn.gpgplugin.version>1.6</mvn.gpgplugin.version>
@@ -258,6 +259,23 @@
 					<configuration>
 						<addOutputDirectory>false</addOutputDirectory>
 						<sourceDirectory>src/main/java</sourceDirectory>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>${mvn.jarplugin.version}</version>
+					<configuration>
+						<archive>
+							<manifest>
+								<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+								<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+							</manifest>
+							<manifestEntries>
+								<Built-By>${build.by}</Built-By>
+							</manifestEntries>
+						</archive>
 					</configuration>
 				</plugin>
 
