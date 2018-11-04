@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import hu.computertechnika.paginationfx.control.PaginationTableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="hu.computertechnika.paginationfx.example.fxml.FXMLExampleController">
+
+	<center>
+		<PaginationTableView fx:id="paginationTableView">
+			<tableView>
+				<columns>
+					<TableColumn text="Items" prefWidth="200" />
+				</columns>
+			</tableView>
+		</PaginationTableView>
+	</center>
+
+</BorderPane>
+
